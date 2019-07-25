@@ -16,7 +16,7 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  load_library(file_path)
+  library = load_library(file_path)
   library["get emoticon"].each do [key, value]
     if key == emoticon
       return value
